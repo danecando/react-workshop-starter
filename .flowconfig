@@ -1,0 +1,9 @@
+[ignore]
+.*/.vagrant
+.*/node_modules
+.*/public
+.*/webpack.config.js
+.*/server.js
+
+[include]
+.*/src/**/*

@@ -1,0 +1,16 @@
+{
+  "extends": "airbnb",
+  "rules": {
+    "comma-dangle": 0,
+    "no-console": 0,
+    "padded-blocks": 0,
+    "jsx-quotes": [2, "prefer-double"]
+  },
+  "ecmaFeatures": {
+    "generators": true
+  },
+  "env": {
+    "browser": true,
+    "mocha" : true
+  }
+}

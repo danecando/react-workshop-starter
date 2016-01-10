@@ -1,0 +1,15 @@
+# humanstxt.org/
+# The humans responsible & technology colophon
+
+# TEAM
+
+  Dane Grant -- Founder/Developer -- @danecando
+  Ryan Kersh -- Co-Founder/Designer/Developer
+
+# THANKS
+
+  #learnjavascript, and all contributors big and small
+
+# TECHNOLOGY COLOPHON
+
+  HTML5, CSS3, JavaScript, Node.js, React, Express, Sass, Bourbon, Bootstrap 4, Browserify, Modernizr, Babel, Handlebars, ESLint
