@@ -7,7 +7,7 @@
     "start": "node server.js",
     "build": "BABEL_ENV=production webpack",
     "lint": "eslint src/*",
-    "typecheck": "flow check",
+    "flow": "flow check",
     "test": "BABEL_ENV=test mocha --require babel-register src/**/*-test.js",
     "test:watch": "BABEL_ENV=test mocha --require babel-register src/**/*-test.js --watch --reporter min"
   },
