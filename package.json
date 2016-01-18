@@ -1,6 +1,6 @@
 {
   "name": "react-workshop-starter",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "React workshop project boilerplate",
   "main": "server.js",
   "scripts": {
