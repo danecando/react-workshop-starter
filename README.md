@@ -1,11 +1,13 @@
 react-workshop-starter
 ====
 
-[![Build Status](https://travis-ci.org/danecando/react-workshop-starter.svg)](https://travis-ci.org/danecando/react-workshop-starter) [![bitHound Dependencies](https://www.bithound.io/github/danecando/react-workshop-starter/badges/dependencies.svg)](https://www.bithound.io/github/danecando/react-workshop-starter/master/dependencies/npm) [![bitHound Dev Dependencies](https://www.bithound.io/github/danecando/react-workshop-starter/badges/devDependencies.svg)](https://www.bithound.io/github/danecando/react-workshop-starter/master/dependencies/npm) [![bitHound Overall Score](https://www.bithound.io/github/danecando/react-workshop-starter/badges/score.svg)](https://www.bithound.io/github/danecando/react-workshop-starter)
+[![Build Status](https://travis-ci.org/danecando/react-workshop-starter.svg)](https://travis-ci.org/danecando/react-workshop-starter) [![bitHound Dependencies](https://www.bithound.io/github/danecando/react-workshop-starter/badges/dependencies.svg)](https://www.bithound.io/github/danecando/react-workshop-starter/master/dependencies/npm) [![bitHound Dev Dependencies](https://www.bithound.io/github/danecando/react-workshop-starter/badges/devDependencies.svg)](https://www.bithound.io/github/danecando/react-workshop-starter/master/dependencies/npm)
 
 Boilerplate project for [React Workshop](https://github.com/danecando/react-workshop); Part of the [UXDevSummit](http://uxdsummit.com/) conference.
 
 This is the starting point for the workshop. We will use this to do some hands-on app building and hopefully learn some React & Flux/Redux along the way !
+
+Better documentation of this boilerplate to come soon...
 
 ### About
 
@@ -19,7 +21,14 @@ The boilerplate comes with a HelloWorld component that is accompanied with a cou
 
 We also have [eslint](http://eslint.org/) configured for our code linting and Facebook's [flow](http://flowtype.org/) to enable type checking.
 
-Also, I've included a [Vagrant](https://www.vagrantup.com/) configuration with an accompanying provision bash script if you would like to spin up a VM for your dev environment. 
+Also, I've included a [Vagrant](https://www.vagrantup.com/) configuration with an accompanying provision bash script if you would like to spin up a VM for your dev environment.
+ 
+ ### Styles
+ 
+ I've included [React Toolbox](http://react-toolbox.com/#/) for some awesome Material Design components. It uses modular css -- take a look at HelloWorld.jsx and it's style.scss file or [css-loader](https://github.com/webpack/css-loader) to see how this is used.
+ The base styles in `src/styles` has boostrap 4 scss available to you. Currently I've only included their mixins and grid but feel free to use them as you please. If you want to use any variables or mixins from your base styles in a component's stylesheet you must `@import "~_globals.scss";` at the top. See `HelloWorld/style.css`
+ * Any styles you add to `src/styles` will be compiled into a single style.css file that is included index.html
+ * Any styles coupled with a component outside of src/styles uses modular css and will be inlined
 
 ### Installation
 

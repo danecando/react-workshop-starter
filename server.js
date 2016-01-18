@@ -1,3 +1,4 @@
+'use strict';
 
 var browserSync = require('browser-sync');
 var webpack = require('webpack');

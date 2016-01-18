@@ -1,4 +1,4 @@
-require('babel-polyfill');
+
 require('./styles/main');
 
 import React from 'react';

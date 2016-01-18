@@ -30,6 +30,7 @@ module.exports = {
   },
   entry: [
     'webpack-hot-middleware/client?path=/__webpack_hmr',
+    'babel-polyfill',
     './src/index.js'
   ],
   output: {
