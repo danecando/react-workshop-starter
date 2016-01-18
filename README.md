@@ -23,12 +23,12 @@ We also have [eslint](http://eslint.org/) configured for our code linting and Fa
 
 Also, I've included a [Vagrant](https://www.vagrantup.com/) configuration with an accompanying provision bash script if you would like to spin up a VM for your dev environment.
  
- ### Styles
+### Styles
  
  I've included [React Toolbox](http://react-toolbox.com/#/) for some awesome Material Design components. It uses modular css -- take a look at HelloWorld.jsx and it's style.scss file or [css-loader](https://github.com/webpack/css-loader) to see how this is used.
  The base styles in `src/styles` has boostrap 4 scss available to you. Currently I've only included their mixins and grid but feel free to use them as you please. If you want to use any variables or mixins from your base styles in a component's stylesheet you must `@import "~_globals.scss";` at the top. See `HelloWorld/style.css`
  * Any styles you add to `src/styles` will be compiled into a single style.css file that is included index.html
- * Any styles coupled with a component outside of src/styles uses modular css and will be inlined
+ * Any styles coupled with a component outside of `src/styles` uses modular css and will be inlined
 
 ### Installation
 
