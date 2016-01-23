@@ -39,7 +39,7 @@
     "react-toolbox": "^0.14.0"
   },
   "devDependencies": {
-    "babel-core": "^6.4.0",
+    "babel-core": "^6.4.5",
     "babel-eslint": "^5.0.0-beta6",
     "babel-loader": "^6.2.1",
     "babel-polyfill": "^6.3.14",
@@ -55,7 +55,7 @@
     "css-modules-require-hook": "^2.1.0",
     "enzyme": "^1.2.0",
     "eslint": "^1.10.3",
-    "eslint-config-airbnb": "^3.1.0",
+    "eslint-config-airbnb": "^4.0.0",
     "eslint-plugin-react": "^3.14.0",
     "extract-text-webpack-plugin": "^1.0.1",
     "file-loader": "^0.8.5",
