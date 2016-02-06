@@ -29,7 +29,7 @@ apt-get update && apt-get install -y -q --no-install-recommends \
 
 export APP_DIR=/vagrant
 export NVM_DIR=/home/vagrant/.nvm
-NODE_VERSION=4.2.3
+NODE_VERSION=0.12.9
 
 # Install nvm with node and npm
 curl https://raw.githubusercontent.com/creationix/nvm/v0.29.0/install.sh | bash

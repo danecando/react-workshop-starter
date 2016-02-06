@@ -12,7 +12,7 @@ describe('<HelloWorld />', () => {
   });
 
   it('should display "Hello World" in an h1 element', () => {
-    const wrapper = render(<HelloWorld />);
+    const wrapper = render(<HelloWorld name="World" />);
     expect(wrapper.find('h1').text()).to.contain('Hello World');
   });
 

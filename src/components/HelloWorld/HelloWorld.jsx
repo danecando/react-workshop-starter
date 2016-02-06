@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
-import style from './style';
 
 class HelloWorld extends Component {
   render() {
     return (
       <div className="container">
-        <h1 className={style.title}>Hello World</h1>
+        <h1>Hello World</h1>
+        <buttton className="btn btn-primary">Click me</buttton>
       </div>
     );
   }

@@ -47,7 +47,7 @@ module.exports = {
     new webpack.DefinePlugin({
       '__DEV__': ENV === 'development',
       '__TEST__': ENV === 'test',
-      '__CLIENT__': JSON.stringify(true),
+      '__CLIENT__': true,
       'process.env': {
         'NODE_ENV': JSON.stringify(ENV),
         'BABEL_ENV': JSON.stringify(ENV)
@@ -70,20 +70,20 @@ module.exports = {
         include: path.join(__dirname, 'src/styles'),
         loader: ExtractTextPlugin.extract('style-loader', 'css-loader?importLoaders=2&sourceMap&localIdentName=[name]__[local]___[hash:base64:5]!postcss-loader!sass?outputStyle=expanded&sourceMap=true&sourceMapContents=true')
       },
-      {
-        test: /\.(scss|css)$/,
-        exclude: path.join(__dirname, 'src/styles'),
-        loader: 'style-loader!css-loader?modules&importLoaders=2&sourceMap&localIdentName=[name]__[local]___[hash:base64:5]!postcss-loader!sass?outputStyle=expanded&sourceMap=true&sourceMapContents=true!toolbox-loader'
-      },
+      //{
+      //  test: /\.(scss|css)$/,
+      //  exclude: path.join(__dirname, 'src/styles'),
+      //  loader: 'style-loader!css-loader?modules&importLoaders=2&sourceMap&localIdentName=[name]__[local]___[hash:base64:5]!postcss-loader!sass?outputStyle=expanded&sourceMap=true&sourceMapContents=true!toolbox-loader'
+      //},
       {
         test: /\.(png|jpg|gif|ico|svg)$/,
         loader: 'url-loader?limit=10000'
       }
     ]
   },
-  toolbox: {
-    theme: './src/styles/custom/_theme.scss'
-  },
+  //toolbox: {
+  //  theme: './src/styles/custom/_theme.scss'
+  //},
   postcss: [
     autoprefixer({ browsers: AUTOPREFIXER_BROWSERS })
   ]

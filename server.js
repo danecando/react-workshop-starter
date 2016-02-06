@@ -1,32 +1,28 @@
 'use strict';
 
-var browserSync = require('browser-sync');
-var webpack = require('webpack');
-var config = require('./webpack.config');
-var compiler = webpack(config);
+const path = require('path');
+const express = require('express');
+const webpack = require('webpack');
+const config = require('./webpack.config');
 
-var options = {
-    quiet: false,
-    hot: true,
-    inline: true,
-    historyApiFallback: true,
-    lazy: false,
-    publicPath: config.output.publicPath,
-    stats: true
+const app = express();
+const compiler = webpack(config);
+
+const options = {
+  quiet: false,
+  hot: true,
+  inline: true,
+  historyApiFallback: true,
+  lazy: false,
+  publicPath: config.output.publicPath,
+  stats: true
 };
 
-browserSync({
-  server: {
-    baseDir: 'public',
-    middleware: [
-      require('connect-history-api-fallback')(),
-      require('webpack-dev-middleware')(compiler, options),
-      require('webpack-hot-middleware')(compiler)
-    ],
-  },
-  files: [
-    'public/assets/images/**/*',
-    'public/assets/fonts/**/*',
-    'public/assets/css/**/*.css'
-  ]
+app.use(express.static(__dirname + '/public'));
+app.use(require('webpack-dev-middleware')(compiler, options));
+app.use(require('webpack-hot-middleware')(compiler));
+app.get('*', function response(req, res) {
+  res.sendFile(path.join(__dirname, 'public/index.html'));
 });
+
+app.listen(3000);
