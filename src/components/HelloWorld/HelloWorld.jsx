@@ -1,14 +1,18 @@
-import React, { Component } from 'react';
+import React from 'react';
 
-class HelloWorld extends Component {
-  render() {
+var HelloWorld = React.createClass({
+
+  handleClick: function(e) {
+
+  },
+  render: function() {
     return (
-      <div className="container">
-        <h1>Hello World</h1>
-        <buttton className="btn btn-primary">Click me</buttton>
+      <div>
+      <h1>Hello {this.props.name}!</h1>
+        <button className="btn btn-primary" id="some-btn" onClick={this.handleClick} >Button</button>
       </div>
     );
   }
-}
+});
 
 export default HelloWorld;
